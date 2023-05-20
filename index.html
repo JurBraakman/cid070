@@ -76,7 +76,17 @@
       zoomControl: false,
       scrollWheelZoom: false,
       tap: false
-    }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
+    }).setView([52.0755760494074, 4.331037998199464], 15); // default center is overridden by Google Sheet options and points
+  
+  var CSMarker = L.marker([52.081078548014716, 4.324091076850892]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Station Den Haag Centraal "); // EDIT pop-up text message
+    
+  var NOIMarker = L.marker([52.07902796574822, 4.343207180500031]).addTo(map)
+  .bindPopup("Station Laan van NOI ");
+    
+  var HSMarker = L.marker([52.069792584702114, 4.322599768638612]).addTo(map)
+  .bindPopup("Station Hollands Spoor");
+  
   </script>
 
   <script type="text/javascript" src="./google-doc-url.js"></script>
